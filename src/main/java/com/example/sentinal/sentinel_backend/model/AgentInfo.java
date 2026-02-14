@@ -9,7 +9,6 @@ import lombok.Setter;
 
 import java.time.LocalDateTime;
 
-@Entity(name = "agent_info")
 @Data
 public class AgentInfo {
 
