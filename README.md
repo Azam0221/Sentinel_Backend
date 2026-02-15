@@ -17,7 +17,7 @@ It acts as the mediator between the **Python Bridge** (The Enforcer) and the **A
 * **Spring Boot 3.x** (Web, Validation)
 * **Lombok** (Boilerplate reduction)
 * **Maven** (Dependency Management)
-* **Concurrent HashMaps / H2** (For high-speed in-memory state management during the hackathon)
+* **Concurrent HashMaps 
 
 ## API Endpoints
 
