@@ -49,7 +49,7 @@ It acts as the mediator between the **Python Bridge** (The Enforcer) and the **A
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/Azam0221/Sentinel_Backend.git](https://github.com/Azam0221/Sentinel_Backend.git)
+    git clone https://github.com/Azam0221/Sentinel_Backend.git
     cd Sentinel_Backend
     ```
 
