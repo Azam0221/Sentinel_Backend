@@ -55,4 +55,15 @@ public class AgentController {
         return agentService.killAgent(agentId);
     }
 
+    @GetMapping("/logs/{agentId}")
+    public List<String> getLogs(@PathVariable String agentId){
+        return agentService.getLogs(agentId);
+    }
+
+    @PostMapping("/logs/{agentId}")
+    public ResponseEntity<Void> receiveLog(@PathVariable String agentId, @RequestBody Map<String, String> payload) {
+        agentService.addLog(agentId, payload.get("log"));
+        return ResponseEntity.ok().build();
+    }
+
 }
