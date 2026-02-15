@@ -65,11 +65,11 @@ It acts as the mediator between the **Python Bridge** (The Enforcer) and the **A
 
     The server will start on: `http://localhost:8080`
 
-## 🔗 Architecture Integration
+## Architecture Integration
 
 * **Python Connection:** Ensure your Python Bridge is configured to point to `http://localhost:8080/api`.
 * **Android Connection:** Ensure your `RetrofitClient` in the Android app points to your machine's local IP address (e.g., `http://192.168.1.X:8080/api/v1/`).
 
-## 🛡️ Security Philosophy
+## Security Philosophy
 
 Why Spring Boot? We chose Java for this layer to ensure **Atomic State Consistency**. When an admin hits "Kill," that state change must be instant, persistent, and thread-safe across all connected bridges. Python handles the traffic, but Spring Boot holds the *truth*.
